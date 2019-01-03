@@ -6,7 +6,7 @@
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine src/**/*_spec.js",
     "clean": "git checkout HEAD -- sandbox && git clean -f -d sandbox",
-    "launch": "cd sandbox && ng g compo-jar:compo-jar",
+    "launch": "cd sandbox && ng add ..",
     "clean:launch": "npm run clean && npm run launch",
     "build:clean:launch": "npm run build && npm run clean && npm run launch",
     "link:schematics": "npm link && cd sandbox && npm link compo-jar"

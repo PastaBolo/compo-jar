@@ -1,9 +1,14 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "compo-jar": {
+    "ng-add": {
       "description": "A blank schematic.",
-      "factory": "./compo-jar/index#compoJar"
+      "factory": "./ng-add"
+    },
+    "setup-project": {
+      "description": "A blank schematic.",
+      "factory": "./setup-project",
+      "private": true
     }
   }
 }
